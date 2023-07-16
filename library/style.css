@@ -29,10 +29,6 @@
 
 .header__menu {
   margin-left: 454px;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  line-height: 50px;
 }
 
 .menu {
@@ -41,8 +37,17 @@
   list-style: none;
 }
 
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+}
+
 .header__profile {
   width: 28px;
   height: auto;
   margin-left: 40px;
+  cursor: pointer;
 }
