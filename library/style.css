@@ -51,3 +51,29 @@
   margin-left: 40px;
   cursor: pointer;
 }
+
+.welcome {
+  width: 100%;
+  padding: 255px 0 195px;
+  background-image: url('./assets/bg_welcome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome__bg {
+  display: inline-block;
+  padding: 35px 40px;
+  background: #0c0c0e;
+}
+
+.welcome__title {
+  width: 520px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Forum', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
