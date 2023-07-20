@@ -1,0 +1,25 @@
+:root {
+  --font-family-forum: 'Forum', cursive;
+  --font-family-inter: 'Inter', sans-serif;
+}
+
+@font-face {
+  font-family: 'Forum';
+  src: url(./fonts/Forum-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/Inter-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/Inter-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

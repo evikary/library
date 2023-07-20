@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <title>Library</title>
@@ -14,7 +14,7 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <h1 class="header__title">Brooklyn Public Library</h1>
+      <h1 class="title">Brooklyn Public Library</h1>
       <nav class="header__menu">
         <ul class="menu">
           <li>
@@ -34,39 +34,142 @@
           </li>
         </ul>
       </nav>
-      <img class="header__profile" src="./assets/profile.svg" alt="" />
+      <img class="profile" src="./assets/profile.svg" alt="">
     </header>
     <main>
       <section class="welcome">
-        <div class="welcome__bg">
-          <h2 class="welcome__title">welcome <br />
+        <div class="bg">
+          <h2 class="greetingText">welcome <br />
             to the brooklyn <br />
             library</h2>
         </div>
       </section>
       <section class="about">
-        <h1 class="about__title">about</h1>
-        <div class="about__line"></div>
-        <p class="about__subtitle">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee
+        <h2 class="blocksTitle">about</h2>
+        <div class="line"></div>
+        <p class="subtitle">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee
           shop inside </p>
-        <div class="about__gallery">
+        <div class="gallery">
           <img src="./assets/about_img1.png" alt="" />
           <img src="./assets/about_img2.png" alt="" />
           <img src="./assets/about_img3.png" alt="" />
         </div>
         <div class="circles">
-          <div class="circles__cell">
-            <div class="circles__btn circles__btn_active"></div>
+          <div class="circle__btn">
+            <div class="btn btn_active"></div>
           </div>
-          <div class="circles__cell">
-            <div class="circles__btn"></div>
+          <div class="circle__btn">
+            <div class="btn"></div>
           </div>
-          <div class="circles__cell">
-            <div class="circles__btn"></div>
+          <div class="circle__btn">
+            <div class="btn"></div>
           </div>
         </div>
       </section>
-      <section>favorites</section>
+      <section class="favorites">
+        <h2 class="blocksTitle">favorites</h2>
+        <div class="line"></div>
+        <div class="favorites__content">
+          <div class="container">
+            <h3 class="selectionSeasons">Pick favorites of season</h3>
+            <div class="container__seasons">
+              <input class="radioBtn" type="radio" id="winter" name="btn" checked>
+              <labe class="season season_checked" for="winter">Winter</labe>
+
+              <input class="radioBtn" type="radio" id="spring" name="btn">
+              <label class="season" for="spring">Spring</label>
+
+              <input class="radioBtn" type="radio" id="summer" name="btn">
+              <label class="season" for="summer">Summer</label>
+
+              <input class="radioBtn" type="radio" id="autumn" name="btn">
+              <label class="season" for="autumn">Autumn</label>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="imgBook" src="./assets/book1.jpg" alt="The Book Eaters" />
+            <h4 class="card__staff">Staff Picks</h4>
+            <div class="card__line"></div>
+            <h5 class="card__title">The Book Eaters <br />
+              <span>By Sunyi Dean</span>
+            </h5>
+            <p class="card__description">
+              An unusual sci-fi story about a book <br />
+              eater woman who tries desperately to <br />
+              save her dangerous mind-eater son <br />
+              from tradition and certain death. <br />
+              Complete with dysfunctional family <br />
+              values, light Sapphic
+              romance, and a <br />
+              strong, complex protagonist. Not for <br />
+              the faint of heart.
+            </p>
+            <div class="card__boxBtn">
+              <button class="card__btn">Buy</button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="imgBook" src="./assets/book2.jpg" alt="Cackle" />
+            <h4 class="card__staff">Staff Picks</h4>
+            <div class="card__line"></div>
+            <h5 class="card__title">Cackle<br />
+              <span>By Rachel Harrison</span>
+            </h5>
+            <p class="card__description">
+              Are your Halloween movies of choice <br />
+              The Witches of Eastwick and Practical <br />
+              Magic? Look no further than here - <br />
+              where a woman recovering from a <br />
+              breakup moves to a quaint town in <br />
+              upstate New York and befriends a <br />
+              beautiful witch.
+            </p>
+            <div class="card__boxBtn">
+              <button class="card__btn">Buy</button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="imgBook" src="./assets/book3.jpg" alt="Dante: Poet of the Secular World" />
+            <h4 class="card__staff">Staff Picks</h4>
+            <div class="card__line"></div>
+            <h5 class="card__title">Dante: Poet of the Secular World <br />
+              <span>By Erich Auerbach</span>
+            </h5>
+            <p class="card__description">
+              Auerbach's engaging book places the <br />
+              'Comedy' within the tradition of epic, <br />
+              tragedy, and philosophy in general, <br />
+              arguing for Dante's uniqueness as one <br />
+              who raised the individual and his <br />
+              drama of soul into something of <br />
+              divine significance—an inspired <br />
+              introduction to Dante's main themes.
+            </p>
+            <div class="card__boxBtn">
+              <button class="card__btn">Buy</button>
+            </div>
+          </div>
+          <div class="card">
+            <img class="imgBook" src="./assets/book4.jpg" alt="The Last Queen" />
+            <h4 class="card__staff">Staff Picks</h4>
+            <div class="card__line"></div>
+            <h5 class="card__title">The Last Queen<br />
+              <span>By Clive Irving</span>
+            </h5>
+            <p class="card__description">
+              A timely and revelatory new <br />
+              biography of Queen Elizabeth (and her <br />
+              family) exploring how the Windsors <br />
+              have evolved and thrived as the <br />
+              modern world has changed around them.
+            </p>
+            <div class="card__boxBtn">
+              <button class="card__btn btn_gold">Own</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>coffee shop</section>
       <section>our contacts</section>
       <section>digital library cards</section>
