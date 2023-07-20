@@ -283,3 +283,92 @@
   bottom: -1px;
   right: -40px;
 }
+
+.coffeeShop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--c-white);
+}
+
+.annotation {
+  color: var(--c-black);
+  text-align: center;
+  font-family: var(--font-family-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.coffeeShop__content {
+  padding: 0 20px 40px 20px;
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftCard {
+  width: 438px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.rightCard {
+  width: 438px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.priceCoffee {
+  color: var(--c-gold);
+  font-family: var(--font-family-forum);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.item__product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product {
+  /* width: 199px; */
+  flex-grow: 1;
+  color: var(--c-black);
+  font-family: var(--font-family-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.goldLine {
+  width: 100px;
+  height: 1px;
+  background: var(--c-gold);
+}
+
+.price {
+  margin-left: 60px;
+  color: var(--c-black);
+  font-family: var(--font-family-forum);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
