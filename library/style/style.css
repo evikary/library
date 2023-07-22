@@ -425,3 +425,140 @@
 .name-box {
   margin: 20px 0 34px;
 }
+
+.digital {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--c-white);
+}
+
+.digital__content {
+  padding: 0 20px 40px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin-bottom: 30px;
+  color: var(--c-black);
+  font-family: var(--font-family-inter);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.external-card {
+  padding: 20px 20px 0 20px;
+  border: 3px solid var(--c-gold);
+  background: var(--c-white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.internal-card {
+  margin-bottom: 20px;
+  padding: 20px 0 25px 20px;
+  background: var(--c-gold);
+}
+
+.internal-card .text {
+  margin-bottom: 20px;
+  color: var(--c-black);
+  font-family: var(--font-family-forum);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+}
+
+.input {
+  width: 520px;
+  padding: 8px 0 8px 20px;
+  color: var(--c-grey);
+  font-family: var(--font-family-forum);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  border-radius: 10px;
+  border: transparent;
+  background: var(--c-white);
+}
+
+.box-input {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.check-btn {
+  margin-bottom: 30px;
+  padding: 10px 40px;
+  color: var(--c-black);
+  text-align: center;
+  font-family: var(--font-family-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  background: var(--c-white);
+}
+
+.box-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.container__reader-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.reader-card {
+  margin-bottom: 35px;
+  color: var(--c-black);
+  text-align: right;
+  font-family: var(--font-family-forum);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.reader-card-description {
+  margin-bottom: 35px;
+  color: var(--c-black);
+  text-align: right;
+  font-family: var(--font-family-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+}
+
+.box__btn-reader-card {
+  display: flex;
+  column-gap: 20px;
+}
+
+.btn-reader-card {
+  color: var(--c-dark);
+  padding: 10px 15px;
+  font-family: var(--font-family-inter);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  background: var(--c-white);
+}
