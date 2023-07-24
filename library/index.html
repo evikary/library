@@ -18,19 +18,19 @@
       <nav class="header__menu">
         <ul class="menu">
           <li>
-            <a class="menu__link" href="">About</a>
+            <a class="menu__link" href="#about">About</a>
           </li>
           <li>
-            <a class="menu__link" href="">Favorites</a>
+            <a class="menu__link" href="#favorites">Favorites</a>
           </li>
           <li>
-            <a class="menu__link" href="">Coffee shop</a>
+            <a class="menu__link" href="#coffee_shop">Coffee shop</a>
           </li>
           <li>
-            <a class="menu__link" href="">Contacts</a>
+            <a class="menu__link" href="#contacts">Contacts</a>
           </li>
           <li>
-            <a class="menu__link" href="">Library Card</a>
+            <a class="menu__link" href="#library_card">Library Card</a>
           </li>
         </ul>
       </nav>
@@ -45,7 +45,7 @@
         </div>
       </section>
       <section class="about">
-        <h2 class="blocks-title">about</h2>
+        <h2 class="blocks-title" id="about">about</h2>
         <div class="line"></div>
         <p class="subtitle">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee
           shop inside </p>
@@ -53,6 +53,8 @@
           <img src="./assets/about_img1.png" alt="" />
           <img src="./assets/about_img2.png" alt="" />
           <img src="./assets/about_img3.png" alt="" />
+          <img src="./assets/about_img4.png" alt="" />
+          <img src="./assets/about_img5.png" alt="" />
         </div>
         <div class="circles">
           <div class="circle__btn">
@@ -66,7 +68,7 @@
           </div>
         </div>
       </section>
-      <section class="favorites">
+      <section class="favorites" id="favorites">
         <h2 class="blocks-title">favorites</h2>
         <div class="line"></div>
         <div class="favorites__content">
@@ -74,7 +76,7 @@
             <h3 class="selection-seasons">Pick favorites of season</h3>
             <div class="container__seasons">
               <input class="radio-btn" type="radio" id="winter" name="btn" checked>
-              <labe class="season season_checked" for="winter">Winter</labe>
+              <label class="season" for="winter">Winter</label>
 
               <input class="radio-btn" type="radio" id="spring" name="btn">
               <label class="season" for="spring">Spring</label>
@@ -165,12 +167,12 @@
               modern world has changed around them.
             </p>
             <div class="card__box-btn">
-              <button class="card__btn btn_gold">Own</button>
+              <button class="card__btn btn_gold" disabled>Own</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="coffee-shop">
+      <section class="coffee-shop" id="coffee_shop">
         <h2 class="blocks-title">Coffee shop</h2>
         <div class="line"></div>
         <p class="annotation">In our library, we have of cozy coffee shop, welcoming in customers with frothy
@@ -247,7 +249,7 @@
           </div>
         </div>
       </section>
-      <section class="our-contacts">
+      <section class="our-contacts" id="contacts">
         <h2 class="blocks-title">Our Contacts</h2>
         <div class="line"></div>
         <div class="our-contacts__content">
@@ -267,7 +269,7 @@
           <div class="map"></div>
         </div>
       </section>
-      <section class="digital">
+      <section class="digital" id="library_card">
         <h2 class="blocks-title">Digital Library Cards</h2>
         <div class="line"></div>
         <div class="digital__content">
@@ -303,11 +305,23 @@
       <div class="footer-content">
         <div class="left-column">
           <p>286 Cadman Plaza, New York, <br>NY 11238, United States</p>
-          <div class="box">
-            <img class="icon" src="./assets/twitter.svg" alt="twitter">
-            <img class="icon" src="./assets/insta.svg" alt="instagram">
-            <img class="icon" src="./assets/facebook.svg" alt="facebook">
-          </div>
+          <ul class="box">
+            <li>
+              <a href="twitter.com" target="_blank">
+                <img class="icon" src="./assets/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img class="icon" src="./assets/insta.svg" alt="instagram">
+              </a>
+            </li>
+            <li>
+              <a href="https://ru-ru.facebook.com/" target="_blank">
+                <img class="icon" src="./assets/facebook.svg" alt="facebook">
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="right-column">
           <p>Mon - Fri <br>08:00 am - 07:00 pm</p>
@@ -316,9 +330,9 @@
       </div>
       <div class="footer_line"></div>
       <div class="footer-content padding">
-        <span>2023</span>
-        <span>The Rolling Scopes School</span>
-        <span>Username</span>
+        <span class="footer-text">2023</span>
+        <span class="footer-text">The Rolling Scopes School</span>
+        <a class="footer-text" href="https://github.com/evikary" target="_blank">evikary</a>
       </div>
     </footer>
   </div>
