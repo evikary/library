@@ -142,6 +142,10 @@ h1 {
   overflow: hidden;
 }
 
+.gallery > img {
+  width: 450px;
+}
+
 .circles {
   display: flex;
   margin: 35px 0 35px;
