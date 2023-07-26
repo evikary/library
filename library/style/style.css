@@ -16,7 +16,11 @@ html {
   margin: 0 auto;
 }
 
-.header {
+header {
+  background: var(--c-dark);
+}
+
+.header__wrapper {
   display: flex;
   padding: 20px 20px;
   align-items: center;
@@ -63,11 +67,14 @@ h1 {
 }
 
 .welcome {
-  width: 100%;
-  padding: 220px 0 160px;
+  min-width: 1440px;
   background-image: url('../assets/bg_welcome.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.welcome__wrapper {
+  padding: 220px 0 160px;
 }
 
 .bg {
@@ -89,10 +96,13 @@ h1 {
 }
 
 .about {
+  background: var(--c-white);
+}
+
+.about__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--c-white);
 }
 
 .about-content {
@@ -160,10 +170,13 @@ h1 {
 }
 
 .favorites {
+  background: var(--c-white);
+}
+
+.favorites__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--c-white);
 }
 
 .container {
@@ -350,11 +363,14 @@ li > .radio-btn + .season {
 }
 
 .coffee-shop {
+  background: var(--c-white);
+}
+
+.coffee-shop__wrapper {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--c-white);
 }
 
 .annotation {
@@ -451,10 +467,13 @@ li > .radio-btn + .season {
 }
 
 .our-contacts {
+  background: var(--c-white);
+}
+
+.our-contacts__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--c-white);
 }
 
 .our-contacts__content {
@@ -523,10 +542,13 @@ li > .radio-btn + .season {
 }
 
 .digital {
+  background: var(--c-white);
+}
+
+.digital__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--c-white);
 }
 
 .digital__content {
@@ -687,9 +709,12 @@ li > .radio-btn + .season {
 }
 
 .footer {
-  padding: 20px 20px 0 20px;
   background-color: var(--c-dark);
   color: var(--c-white);
+}
+
+.footer__wrapper {
+  padding: 20px 20px 0 20px;
 }
 
 .footer-content {
