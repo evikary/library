@@ -23,7 +23,7 @@ html {
   background: var(--c-dark);
 }
 
-.title {
+h1 {
   color: var(--c-white);
   font-family: var(--font-family-forum);
   font-size: 30px;
@@ -59,6 +59,7 @@ html {
 
 .profile:hover {
   opacity: 0.5;
+  transition: all 0.3s;
 }
 
 .welcome {
@@ -235,7 +236,6 @@ li > .radio-btn + .season {
 }
 
 .favorites__content {
-  /* margin-bottom: 60px; */
   padding: 0 60px 0 20px;
   width: 100%;
   display: flex;
@@ -297,7 +297,6 @@ li > .radio-btn + .season {
 }
 
 .card__description {
-  /* margin-bottom: 15px; */
   color: var(--c-black);
   font-family: var(--font-family-inter);
   font-size: 15px;
@@ -333,9 +332,11 @@ li > .radio-btn + .season {
   border-radius: 2px;
   border: 1px solid #bb945f;
   background: #bb945f;
+  transition: all 0.3s;
 }
 
 .btn_gold {
+  padding: 8px 23px;
   color: var(--c-gold);
   border: 1px solid var(--c-gold);
   cursor: pointer;
@@ -357,6 +358,18 @@ li > .radio-btn + .season {
 }
 
 .annotation {
+  color: var(--c-black);
+  text-align: center;
+  font-family: var(--font-family-inter);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.annotation > span {
+  margin-right: 4px;
   color: var(--c-black);
   text-align: center;
   font-family: var(--font-family-inter);
@@ -606,6 +619,7 @@ li > .radio-btn + .season {
   border-radius: 2px;
   border: 1px solid var(--c-gold);
   background: var(--c-gold);
+  transition: all 0.3s;
 }
 
 .box-btn {
@@ -669,6 +683,7 @@ li > .radio-btn + .season {
   border-radius: 2px;
   border: 1px solid var(--c-gold);
   background: var(--c-gold);
+  transition: all 0.3s;
 }
 
 .footer {
@@ -713,6 +728,7 @@ li > .radio-btn + .season {
 
 .left-column .box > li:hover {
   opacity: 0.5;
+  transition: all 0.3s;
 }
 
 .left-column .box .icon {
@@ -758,6 +774,7 @@ li > .radio-btn + .season {
 
 .footer-content > .footer-text:hover {
   color: var(--c-grey);
+  transition: all 0.3s;
 }
 
 .padding {
@@ -766,4 +783,5 @@ li > .radio-btn + .season {
 
 a:hover {
   color: var(--c-grey);
+  transition: all 0.3s;
 }
