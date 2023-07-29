@@ -16,10 +16,6 @@ html {
   margin: 0 auto;
 }
 
-header {
-  background: var(--c-dark);
-}
-
 .header__wrapper {
   display: flex;
   padding: 20px 20px;
@@ -68,13 +64,13 @@ h1 {
 
 .welcome {
   min-width: 1440px;
-  background-image: url('../assets/bg_welcome.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .welcome__wrapper {
   padding: 220px 0 160px;
+  background-image: url('../assets/bg_welcome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg {
@@ -621,7 +617,7 @@ li > .radio-btn + .season {
   margin-right: 20px;
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  row-gap: 25px;
 }
 
 .check-btn {
@@ -713,12 +709,12 @@ li > .radio-btn + .season {
 }
 
 .footer {
-  background-color: var(--c-dark);
   color: var(--c-white);
 }
 
 .footer__wrapper {
   padding: 20px 20px 0 20px;
+  background-color: var(--c-dark);
 }
 
 .footer-content {
