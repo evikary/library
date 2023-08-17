@@ -19,8 +19,9 @@ html {
 }
 
 .header__wrapper {
-  display: flex;
+  position: relative;
   padding: 20px 20px;
+  display: flex;
   align-items: center;
   background: var(--c-dark);
 }
@@ -42,7 +43,7 @@ h1 {
   display: flex;
   column-gap: 30px;
   list-style: none;
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
 
 .menu__link {
@@ -51,6 +52,12 @@ h1 {
   font-family: var(--font-family-inter);
   font-size: 20px;
   line-height: 50px;
+}
+
+.header__wrapper .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile {
@@ -836,13 +843,17 @@ a:hover {
     width: 768px;
   }
 
+  .header__wrapper {
+    justify-content: space-between;
+  }
+
   .header__menu {
     margin-left: 0;
   }
   
   .menu {
     position: absolute;
-    right: 54px;
+    right: 0;
     top: -500px;
     padding: 37px 100px 107px;
     flex-direction: column;
@@ -857,10 +868,6 @@ a:hover {
     top: 63px;
   }
 
-  .profile {
-    margin-left: 321px;
-  }
-
   .burger-menu {
     display: block;
     width: 45px;
@@ -869,6 +876,7 @@ a:hover {
     background-image: url('../assets/burger.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
   }
 
   .close-menu {
@@ -881,7 +889,7 @@ a:hover {
     background-repeat: no-repeat;
   }
 
-  .burger:hover {
+  .burger-menu:hover {
     opacity: 0.5;
     transition: all 0.3s;
   }
@@ -990,7 +998,7 @@ a:hover {
   }
 
   .profile {
-    margin-left: 190px;
+    margin-left: 0;
   }
 
   .welcome {
