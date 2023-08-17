@@ -42,6 +42,7 @@ h1 {
   display: flex;
   column-gap: 30px;
   list-style: none;
+  transition: all 0.8s;
 }
 
 .menu__link {
@@ -840,18 +841,44 @@ a:hover {
   }
   
   .menu {
-    display: none;
+    position: absolute;
+    right: 54px;
+    top: -500px;
+    padding: 37px 100px 107px;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 30px;
+    background-color: var(--c-dark);
+  }
+
+  .menu-colomn {
+    position: absolute;
+    top: 63px;
   }
 
   .profile {
     margin-left: 321px;
   }
 
-  .burger {
+  .burger-menu {
     display: block;
     width: 45px;
-    height: auto;
+    height: 22px;
     margin-left: 40px;
+    background-image: url('../assets/burger.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .close-menu {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-left: 40px;
+    background-image: url('../assets/close-burger.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .burger:hover {

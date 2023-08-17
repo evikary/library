@@ -7,3 +7,12 @@ console.log(`
 | o_o |
  \\_^_/
  `);
+
+
+ const burgerMenu = document.querySelector('.burger-menu');
+ const menuList = document.querySelector('.menu');
+
+ burgerMenu.addEventListener('click', (e) => {
+  burgerMenu.classList.toggle('close-menu');
+  menuList.classList.toggle('menu-colomn');
+ })
