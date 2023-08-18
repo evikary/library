@@ -36,7 +36,10 @@
             </li>
           </ul>
         </nav>
-        <img class="profile" src="./assets/profile.svg" alt="">
+        <div class="box">
+          <img class="profile" src="./assets/profile.svg" alt="">
+          <span class="burger-menu"></span>
+        </div>
       </div>
     </div>
   </header>
@@ -59,7 +62,8 @@
         <div class="about__wrapper">
           <h2 class="blocks-title" id="about">about</h2>
           <div class="line"></div>
-          <p class="subtitle">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee
+          <p class="subtitle">The Brooklyn Library is a free workspace, a large number of books and a <br
+              class="only-pad">cozy coffee
             shop inside </p>
           <div class="about-content">
             <div class="gallery">
@@ -70,6 +74,17 @@
               <img src="./assets/about_img5.jpg" alt="The Brooklyn Library">
             </div>
           </div>
+          <div class="about-content-pad">
+            <div class="gallery-pad">
+              <img class="carret" src="./assets/carret_left.svg">
+              <img class="photo_gallery" src="./assets/about_img1.jpg" alt="The Brooklyn Library">
+              <!-- <img class="photo_gallery" src="./assets/about_img2.jpg" alt="The Brooklyn Library"> -->
+              <!-- <img class="photo_gallery" src="./assets/about_img3.jpg" alt="The Brooklyn Library"> -->
+              <!-- <img class="photo_gallery" src="./assets/about_img4.jpg" alt="The Brooklyn Library"> -->
+              <!-- <img class="photo_gallery" src="./assets/about_img5.jpg" alt="The Brooklyn Library"> -->
+              <img class="carret" src="./assets/carret_right.svg">
+            </div>
+          </div>
           <div class="circles">
             <div class="circle__btn">
               <div class="btn btn_active"></div>
@@ -78,6 +93,12 @@
               <div class="btn"></div>
             </div>
             <div class="circle__btn">
+              <div class="btn"></div>
+            </div>
+            <div class="circle__btn pad">
+              <div class="btn"></div>
+            </div>
+            <div class="circle__btn pad">
               <div class="btn"></div>
             </div>
           </div>
@@ -445,9 +466,10 @@
           <p class="annotation"><span>In our library, we have of cozy coffee shop, welcoming in customers with frothy
               cappuccinos and friendly
               conversation.</span> <br>
-            You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also you can
+            You can get a favorite book and read in coffee shop. our barista <br class="only-pad">to cook you best
+            coffee, and also you can
             try
-            desserts <br>from bakery.</p>
+            desserts <br class="only-desk">from bakery.</p>
           <div class="coffee-shop__content">
             <div class="left-card">
               <h3 class="price-coffee">Coffee & Tea </h3>
@@ -572,8 +594,8 @@
             </div>
             <div class="container__reader-card">
               <h5 class="reader-card">Get a reader card</h5>
-              <p class="reader-card-description">You will be able to see a reader card after <br>
-                logging into account or you can register a new <br>account
+              <p class="reader-card-description">You will be able to see a reader card after <br class="only-desk">
+                logging into <br class="only-pad">account or you can register a new <br class="only-desk">account
               </p>
               <div class="box__btn-reader-card">
                 <button class="btn-reader-card">Sign Up</button>

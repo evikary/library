@@ -1,9 +1,33 @@
-console.log('Score: 100/100');
-console.log(
-  'Вёрстка валидная +10\nВёрстка семантическая +16\nВёрстка соответствует макету +54\nОбщие требования к верстке +20'
-);
+console.log('Score: 50/50');
+console.log('Верстка соответсвует макету.\nШирина экрана 768px.\nРеализовано адаптивное меню');
 console.log(`
 |\\---/|
 | o_o |
  \\_^_/
  `);
+
+const burgerMenu = document.querySelector('.burger-menu');
+const menuList = document.querySelector('.menu');
+const linkMenu = document.querySelectorAll('.menu__link');
+
+burgerMenu.addEventListener('click', (e) => {
+  e.stopPropagation();
+  burgerMenu.classList.toggle('close-menu');
+  menuList.classList.toggle('menu-colomn');
+});
+
+document.body.addEventListener('click', (e) => {
+  burgerMenu.classList.remove('close-menu');
+  menuList.classList.remove('menu-colomn');
+});
+
+menuList.addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+
+linkMenu.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    burgerMenu.classList.remove('close-menu');
+    menuList.classList.remove('menu-colomn');
+  });
+});

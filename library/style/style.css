@@ -1,5 +1,6 @@
 @import './variables.css';
 @import './fonts.css';
+@import './responsive.css';
 
 * {
   margin: 0;
@@ -17,8 +18,9 @@ html {
 }
 
 .header__wrapper {
-  display: flex;
+  position: relative;
   padding: 20px 20px;
+  display: flex;
   align-items: center;
   background: var(--c-dark);
 }
@@ -40,6 +42,7 @@ h1 {
   display: flex;
   column-gap: 30px;
   list-style: none;
+  transition: all 0.5s;
 }
 
 .menu__link {
@@ -48,6 +51,12 @@ h1 {
   font-family: var(--font-family-inter);
   font-size: 20px;
   line-height: 50px;
+}
+
+.header__wrapper .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile {
@@ -60,6 +69,10 @@ h1 {
 .profile:hover {
   opacity: 0.5;
   transition: all 0.3s;
+}
+
+.burger {
+  display: none;
 }
 
 .welcome {
@@ -130,12 +143,21 @@ h1 {
   font-family: var(--font-family-inter);
   font-size: 20px;
   line-height: 40px;
+  text-align: center;
 }
 
 .gallery {
   display: flex;
   column-gap: 25px;
   overflow: hidden;
+}
+
+.carret {
+  display: none;
+}
+
+.photo_gallery {
+  display: none;
 }
 
 .gallery > img {
@@ -153,6 +175,10 @@ h1 {
   height: 26px;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.circle__btn.pad {
+  display: none;
 }
 
 .btn {
@@ -809,4 +835,205 @@ li > .radio-btn + .season {
 a:hover {
   color: var(--c-grey);
   transition: all 0.3s;
+}
+
+@media (max-width: 1439px) {
+  .wrapper {
+    width: 768px;
+  }
+
+  .header__wrapper {
+    justify-content: space-between;
+  }
+
+  .header__menu {
+    margin-left: 0;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    top: -500px;
+    padding: 37px 100px 107px;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 30px;
+    background-color: var(--c-dark);
+  }
+
+  .menu-colomn {
+    position: absolute;
+    top: 63px;
+  }
+
+  .burger-menu {
+    display: block;
+    width: 45px;
+    height: 22px;
+    margin-left: 40px;
+    background-image: url('../assets/burger.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-left: 40px;
+    background-image: url('../assets/close-burger.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .burger-menu:hover {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  .welcome {
+    min-width: 768px;
+  }
+
+  .welcome__wrapper {
+    background-image: url('../assets/bg_welcome-pad.jpg');
+  }
+
+  .about-content {
+    display: none;
+  }
+
+  .about-content-pad {
+    display: block;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .gallery-pad {
+    display: flex;
+    column-gap: 58px;
+    overflow: hidden;
+  }
+
+  .gallery-pad > .photo_gallery {
+    display: block;
+    width: 450px;
+  }
+
+  .carret {
+    margin-top: 40px;
+    display: block;
+    width: 24px;
+    height: auto;
+  }
+
+  .circles {
+    margin-top: 20px;
+  }
+
+  .circle__btn.pad {
+    display: block;
+  }
+
+  .favorites__content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .coffee-shop__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-card {
+    margin-top: 40px;
+    margin-left: auto;
+  }
+
+  .our-contacts__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    justify-content: flex-start;
+  }
+
+  .name-box {
+    margin: 20px 0 0;
+  }
+
+  .map {
+    margin-left: 15px;
+    width: 696px;
+    height: 414px;
+    background-image: url('../assets/map-pad.jpg');
+  }
+
+  .digital__content {
+    padding: 0 84px 38px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .check-btn {
+    margin-left: 2px;
+  }
+
+  .container__reader-card {
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reader-card {
+    margin-bottom: 40px;
+  }
+
+  .reader-card-description {
+    text-align: center;
+    text-align: center;
+    margin-bottom: 43px;
+  }
+
+  .box__btn-reader-card {
+    margin-top: -3px;
+  }
+
+  .footer-content > .footer-text {
+    flex-basis: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .profile {
+    margin-left: 0;
+  }
+
+  .welcome {
+    min-width: 100%;
+  }
+
+  .container__seasons {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .map {
+    width: 100%;
+    height: 414px;
+  }
+
+  .input {
+    width: 100%;
+  }
 }
