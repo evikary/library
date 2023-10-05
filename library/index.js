@@ -9,6 +9,10 @@ console.log(`
 const burgerMenu = document.querySelector('.burger-menu');
 const menuList = document.querySelector('.menu');
 const linkMenu = document.querySelectorAll('.menu__link');
+// const circle = document.querySelector('.circles');
+// const onlyCircle = document.querySelectorAll('.circle__btn');
+// const allCircle = document.querySelectorAll('.btn');
+// const activeCircle = document.querySelector('.btn_active');
 
 burgerMenu.addEventListener('click', (e) => {
   e.stopPropagation();
@@ -31,3 +35,15 @@ linkMenu.forEach((item) => {
     menuList.classList.remove('menu-colomn');
   });
 });
+
+//slider
+// circle.addEventListener('click', (e) => {
+//   const currentIndex = [...allCircle].indexOf(activeCircle);
+//   console.log('currentIndex', currentIndex);
+
+//   if (currentIndex === 0) {
+    
+//   }
+// })
+
+

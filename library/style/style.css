@@ -808,7 +808,7 @@ li > .radio-btn + .season {
 }
 
 .footer-content > .footer-text {
-  flex-basis: 301px;
+  flex-basis: 305px;
   color: var(--c-white);
   font-family: var(--font-family-inter);
   font-size: 20px;
@@ -837,7 +837,7 @@ a:hover {
   transition: all 0.3s;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1239px) {
   .wrapper {
     width: 768px;
   }
